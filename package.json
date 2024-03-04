@@ -1,0 +1,29 @@
+{
+  "name": "cdktf-undeclared-var-bug-replication",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc",
+    "get": "cdktf get",
+    "synth": "cdktf synth",
+    "compile": "tsc --pretty",
+    "watch": "tsc -w",
+    "test:watch": "jest --watch",
+    "upgrade": "npm i cdktf@latest cdktf-cli@latest",
+    "upgrade:next": "npm i cdktf@next cdktf-cli@next",
+    "plan-dev": "cdktf plan example-dev-stack",
+    "plan-prod": "cdktf plan example-prod-stack"
+  },
+  "engines": {
+    "node": "20.11.0"
+  },
+  "dependencies": {
+    "cdktf": "^0.20.4",
+    "constructs": "^10.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "cdktf-cli": "^0.20.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
