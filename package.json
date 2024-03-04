@@ -4,14 +4,17 @@
   "scripts": {
     "build": "tsc",
     "get": "cdktf get",
+    "debug": "cdktf debug",
     "synth": "cdktf synth",
     "compile": "tsc --pretty",
     "watch": "tsc -w",
     "test:watch": "jest --watch",
     "upgrade": "npm i cdktf@latest cdktf-cli@latest",
     "upgrade:next": "npm i cdktf@next cdktf-cli@next",
-    "plan-dev": "cdktf plan example-dev-stack",
-    "plan-prod": "cdktf plan example-prod-stack"
+    "plan-dev-example": "cdktf plan example-dev-stack",
+    "plan-prod-example": "cdktf plan example-prod-stack",
+    "plan-dev-another-example": "cdktf plan another-example-dev-stack",
+    "plan-prod-another-example": "cdktf plan another-example-prod-stack"
   },
   "engines": {
     "node": "20.11.0"
